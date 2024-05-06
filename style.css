@@ -25,7 +25,10 @@ padding: 0px 10px;
 
 padding: 20px;
 }
-
+.menu-list li:hover{
+    border-bottom:3px solid #B9FF66;
+    
+}
 .nav-bar{
     display: flex;
     justify-content: space-between;
@@ -416,10 +419,62 @@ padding: 20px;
 
  .foot{
     background-color: black;
-    height: 150px;
+    min-height: 150px;
     margin-top: 60px !important;
     border-radius: 40px 40px 0px 0px;
  }
+ .foot>p{
+    color: white;
+    padding: 20px;
+ }
+
+ .footer-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px;
+ }
+
+ .contact-footer p{
+   color: white;
+   font-size: 20px;
+   margin-bottom: 8px;
+ }
+ .contact-footer h4{
+    background-color: #B9FF66;
+    width: fit-content;
+    padding: 2px;
+    margin-bottom: 10px;
+ }
+
+ .subscribe{
+    background-color: #3e3f43 !important;
+    padding: 40px;
+    border-radius: 10px;
+ }
+.subscribe input{
+    padding: 10px 5px;
+    padding-right: 80px;
+    outline: none;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+.subscribe input::placeholder{
+    color: white;
+    padding-left: 10px;
+}
+
+
+.subscribe button{
+    font-size: 14px;
+    padding: 10px 16px;
+    background-color: #B9FF66;
+    border-radius: 10px;
+
+}
+
 
 
 
@@ -549,5 +604,17 @@ padding: 20px;
     }
     .main-carousel{
         margin: 0px 10px !important;
+    }
+    .footer-main{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .subscribe{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .foot>p{
+        text-align: center;
     }
   }
